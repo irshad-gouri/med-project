@@ -1,0 +1,209 @@
+<animated-header [opacityFactor]="2">
+
+  <ion-header #ionHeader>
+    <ion-navbar color="primary">
+      <ion-title>
+        {{ title }}
+      </ion-title>
+    </ion-navbar>
+  </ion-header>
+
+  <div id="fixed-menu-button" #fixedMenuButton>
+    <!-- <button ion-button menuToggle icon-only>
+      <ion-icon name='menu' color="primary-color-text"></ion-icon>
+    </button> -->
+  </div>
+
+  <ion-content fullscreen #ionContent>
+
+    <div>
+    <ion-navbar color="primary" id="second-header" #secondHeader class="no-padding">
+      <ion-title>
+        <div class="bg-white" style="    border-radius: 10px 10px 0px 0px;">
+        <ion-row >
+          <ion-col col-8 class="no-padding">
+            <ion-item style="border-radius: 10px;">
+              <ion-avatar item-start>
+                <img src="assets/imgs/pinterest.png">
+              </ion-avatar>
+              <h2 class="fs-12"><b>Intraction Designer</b></h2>
+              <h3 class="fs-10 text-blue">Youtube</h3>
+              <p class="fs-8 text-grey">sath francia Ca, USA</p>
+            </ion-item>
+          </ion-col>
+          <ion-col col-4 class="no-padding" style="align-items: flex-end;display: flex;justify-content: center;">
+            <button ion-button class="btn-apply">Apply</button>
+          </ion-col>
+        </ion-row>
+
+        <ion-row >
+          <ion-col col-8 class="no-padding">
+          </ion-col>
+          <ion-col col-4 class="no-padding" style="align-items: flex-end;display: flex;justify-content: center;">
+            <button ion-button class="btn-cas">Easy Apply</button>
+          </ion-col>
+        </ion-row>        
+       </div>
+      </ion-title>
+    </ion-navbar>
+
+    <ion-list class="bg-white">
+
+      <!-- <ion-item *ngFor="let conversation of conversations">
+        <ion-avatar item-start>
+          <img [src]="conversation['image']">
+        </ion-avatar>
+        <h2>{{ conversation['name'] }}</h2>
+        <h3>{{ conversation['title'] }}</h3>
+        <p>{{ conversation['description'] }}</p>
+      </ion-item> -->
+      
+      <div class="grad2">
+        <ion-row style="    border-bottom: 1px solid gainsboro;">
+          <ion-col col-4 class="flex-center">
+            <div class="bor-ryt">
+              <p class="fs-12 text-black mar-auto"><b>2.5K</b></p>
+              <p class="fs-8 text-grey mar-auto">views</p>
+            </div>
+          </ion-col>
+          <ion-col col-4 class="flex-center">
+            <div class="bor-ryt">
+              <p class="fs-12 text-black mar-auto"><b>129</b></p>
+              <p class="fs-8 text-grey mar-auto">Applied</p>  
+            </div>
+          </ion-col>
+          <ion-col col-4 class="flex-center">
+            <div>
+              <p class="fs-12 text-black mar-auto"><b>89</b></p>
+              <p class="fs-8 text-grey mar-auto">Saved</p>  
+            </div>
+          </ion-col>
+        </ion-row>
+        <br>
+           <ion-row>
+              <ion-col col-1 class="flex-center border-grey bor-right">
+                    <ion-icon name="ios-desktop-outline" class="s-icon-bg-circle text-blue"></ion-icon>
+              </ion-col>
+              <ion-col col-4 class="no-padding">
+                <div class="text-align border-grey bor-left">
+                  <span class="fs-8 text-black">Education</span>
+                </div>
+              </ion-col>
+              <ion-col class="text-align  border-grey" COL-7>
+                  <span class="fs-8 text-black">RIN</span>
+              </ion-col>
+           </ion-row>
+
+           <ion-row>
+              <ion-col col-1 class="flex-center border-grey bor-right">
+                    <ion-icon name="ios-desktop-outline" class="s-icon-bg-circle text-blue"></ion-icon>
+              </ion-col>
+              <ion-col col-4 class="no-padding">
+                <div class="text-align border-grey bor-left">
+                  <span class="fs-8 text-black">Designation</span>
+                </div>
+              </ion-col>
+              <ion-col class="text-align  border-grey" COL-7>
+                  <span class="fs-8 text-black">Nurse in charge</span>
+              </ion-col>
+           </ion-row>
+            <ion-row>
+              <ion-col col-1 class="flex-center border-grey bor-right">
+                    <ion-icon name="ios-calendar-outline" class="s-icon-bg-circle text-blue"></ion-icon>
+              </ion-col>
+              <ion-col col-4 class="no-padding">
+                <div class="text-align border-grey bor-left">
+                  <span class="fs-8 text-black">Salery</span>
+                </div>
+              </ion-col>
+              <ion-col class="text-align  border-grey" COL-7>
+                  <span class="fs-8 text-black">$35 - $45 / Hourly</span>
+              </ion-col>
+           </ion-row>
+            <ion-row>
+              <ion-col col-1 class="flex-center border-grey bor-right">
+                    <ion-icon name="ios-book-outline" class="s-icon-bg-circle text-blue"></ion-icon>
+              </ion-col>
+              <ion-col col-4 class="no-padding">
+                <div class="text-align border-grey bor-left">
+                  <span class="fs-8 text-black">Experience</span>
+                </div>
+              </ion-col>
+              <ion-col class="text-align  border-grey" COL-7>
+                  <span class="fs-8 text-black">1 - 3 years</span>
+              </ion-col>
+           </ion-row>
+            <ion-row>
+              <ion-col col-1 class="flex-center border-grey bor-right">
+                    <ion-icon name="ios-cube-outline" class="s-icon-bg-circle text-blue"></ion-icon>
+              </ion-col>
+              <ion-col col-4 class="no-padding">
+                <div class="text-align border-grey bor-left">
+                  <span class="fs-8 text-black">Job Type</span>
+                </div>
+              </ion-col>
+              <ion-col class="text-align  border-grey" COL-7>
+                  <span class="fs-8 text-black">Full Time an part time</span>
+              </ion-col>
+           </ion-row>
+            <ion-row>
+              <ion-col col-1 class="flex-center border-grey bor-right">
+                    <ion-icon name="ios-create-outline" class="s-icon-bg-circle text-blue"></ion-icon>
+              </ion-col>
+              <ion-col col-4 class="no-padding">
+                <div class="text-align border-grey bor-left">
+                  <span class="fs-8 text-black">Type Of Company</span>
+                </div>
+              </ion-col>
+              <ion-col class="text-align  border-grey" COL-7>
+                  <span class="fs-8 text-black">Hospital</span>
+              </ion-col>
+           </ion-row>
+
+           <button ion-button class="bg-blue wid-100 fs-12 dire-btn">DIRECTION</button>
+
+           <div style="    border-bottom: 1px solid gainsboro;">
+             <h6 class="fs-12"><b>Job Description</b></h6>
+             <p class="fs-10">A job description or JD is a document that describes the general tasks, or other related duties, and responsibilities of a position. It may specify the functionary to whom the position reports, specifications such as the qualifications or skills needed by the person in the job, and a salary range.
+              It may specify the functionary to whom the position reports, specifications such as the qualifications or skills needed by the person in the job, and a salary range.
+             It may specify the functionary to whom the position reports, specifications such as the qualifications or skills needed by the person in the job, and a salary range.</p>
+             <br><br>
+           </div>
+
+           <div>
+              <h6 text-center class="fs-10">SIMILAR JOBS</h6>
+             <ion-row>
+              <ion-col class="flex-center">
+                  <img src="assets/imgs/youtube.png" class="bor-you">
+              </ion-col>
+              <ion-col  class="flex-center">
+                  <img src="assets/imgs/youtube.png" class="bor-you">
+              </ion-col>
+              <ion-col  class="flex-center">
+                  <img src="assets/imgs/youtube.png" class="bor-you">
+              </ion-col>
+              <ion-col class="flex-center">
+                  <img src="assets/imgs/youtube.png" class="bor-you">
+              </ion-col>
+              <ion-col  class="flex-center">
+                  <img src="assets/imgs/youtube.png" class="bor-you">
+              </ion-col>
+            </ion-row>  
+           </div>
+        </div>
+
+        <ion-row>
+          <ion-col col-6 class="">
+            <button ion-button class="bg-blue wid-100 fs-12"><ion-icon name="ios-heart-outline"></ion-icon>&nbsp;&nbsp;SAVE</button>
+          </ion-col>
+          <ion-col col-6 class="">
+            <button ion-button class="bg-blue wid-100 fs-12">APPLY</button>
+          </ion-col>
+        </ion-row>
+
+    </ion-list>
+
+    </div>
+
+  </ion-content>
+</animated-header>

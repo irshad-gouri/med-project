@@ -1,0 +1,192 @@
+<ion-header>
+  <ion-navbar class="bg-white">
+      <ion-title class="text-black">
+       <b  class="text-black">JOBS</b>
+      </ion-title>
+    </ion-navbar>
+    <ion-row>
+    <ion-col col-2 class="flex-center">
+         <ion-icon name="ios-compass-outline" class="icon-bg-circle"></ion-icon>
+    </ion-col>
+    <ion-col col-8 class="text-align">
+      <ion-searchbar  placeholder="SEARCH KEYWORD" class="no-padding" ></ion-searchbar>
+    </ion-col>
+    <ion-col col-2 class="flex-center">
+       <ion-icon name="" class="icon-bg-circle">
+         <img src="./assets/imgs/funnel.png" class="funnl-icon">
+       </ion-icon>
+    </ion-col>
+  </ion-row>
+</ion-header>
+
+
+<ion-content>
+
+  <ion-row class="bor-bot-gr">
+    <ion-col class="flex-center">
+         <p class="fs-8" text-center (click)="SetuSer('fulltime')" [ngClass]="(SetUsers == 'fulltime')?'select-item':''" >FULL TIME</p>
+    </ion-col>
+    <ion-col  class="flex-center">
+        <p class="fs-8" text-center (click)="SetuSer('parttime')" [ngClass]="(SetUsers == 'parttime')?'select-item':''" >PART TIME</p>
+    </ion-col>
+    <ion-col  class="flex-center">
+        <p class="fs-8" text-center (click)="SetuSer('internship')" [ngClass]="(SetUsers == 'internship')?'select-item':''" >INTERNSHIP</p>
+    </ion-col>
+    <ion-col class="flex-center">
+        <p class="fs-8" text-center (click)="SetuSer('temp')" [ngClass]="(SetUsers == 'temp')?'select-item':''">TEMPORARY</p>
+    </ion-col>
+    <ion-col  class="flex-center">
+        <p class="fs-8" text-center (click)="SetuSer('cont')" [ngClass]="(SetUsers == 'cont')?'select-item':''">CONTRACT</p>
+    </ion-col>
+  </ion-row>
+<div>
+
+<div class="bestjob">
+	<p text-center class="mar-auto">Best match Jobs </p>
+</div>
+
+  <ion-row>
+    <ion-col class="text-align no-padding" col-3>
+         <p class="left-jobs-tag bg-green mar-bot-none" text-center>Featured Jobs</p>
+    </ion-col>
+    <ion-col class="text-align">
+         <p class="text-blue fs-8 wid-100" text-right>SWIPE TO LEFT TO SEE MORE &nbsp;<ion-icon name="play"></ion-icon>&nbsp;<ion-icon name="play"></ion-icon></p>
+    </ion-col>
+  </ion-row>
+</div>
+
+  <ion-scroll scrollX="true" class="scrol">
+    <ion-row nowrap>
+      <ion-col col-11 class="bg-gradient" *ngFor="let vendr of [1,1,1,1,1,1,1]" (click)="goJobDetailsPage()">
+        <!-- <div class="scrolling-div"> -->
+               <span class="text-grey posi-days">2 Days To go</span>
+            <ion-row>
+              <ion-col col-3 class="flex-center ped-ryt-zero">
+                 <img src="assets/imgs/skype.png" class="img-profile" />
+              </ion-col>
+              <ion-col class="text-align ped-left-zero">
+                <div class="wid-100 " text-left>
+                  <p class="fs-12 font-w-gr text-trans mar-set ">Senior UX Designer developer</p>
+                  <p class="fs-12 text-grey1 mar-auto">Brookdale senior laverl</p>
+                </div>
+              </ion-col>
+            </ion-row>
+            <div class="grad2">
+               <ion-row>
+                  <ion-col col-2 class="flex-center">
+                        <ion-icon name="home" class="s-icon-bg-circle bg-white text-icon-clr"></ion-icon>
+                  </ion-col>
+                  <ion-col class="text-align">
+                      <span class="fs-12 text-white">nursing Home</span>
+                  </ion-col>
+               </ion-row>
+               <ion-row>
+                  <ion-col col-2 class="flex-center">
+                        <ion-icon name="md-time" class="s-icon-bg-circle bg-white text-icon-clr"></ion-icon>
+                  </ion-col>
+                  <ion-col class="text-align">
+                      <span class="fs-12 text-white">12 Hrs / 8 Hrs</span>
+                  </ion-col>
+               </ion-row>
+               <ion-row>
+                  <ion-col col-2 class="flex-center">
+                        <ion-icon name="md-calendar" class="s-icon-bg-circle bg-white text-icon-clr"></ion-icon>
+                  </ion-col>
+                  <ion-col class="text-align">
+                      <span class="fs-12 text-white">3 - 4 Years </span>
+                  </ion-col>
+                   <ion-col class="flex-center"  col-4>
+                         
+                         <button ion-button small class="card-btn-class bg-white">3.5 away</button>
+                    </ion-col>
+               </ion-row>
+               <ion-row>
+                  <ion-col col-2 class="flex-center">
+                        <ion-icon name="md-pin" class="s-icon-bg-circle bg-white text-icon-clr"></ion-icon>
+                  </ion-col>
+                  <ion-col class="text-align">
+                      <span class="fs-12 text-white">mount Prospect, IL</span>
+                  </ion-col>
+                   <ion-col class="flex-center"  col-4>
+                         <button ion-button small class="card-btn-class bg-white">Easy Apply</button>
+                    </ion-col>
+               </ion-row>
+            </div>
+          <!-- </div> -->
+      </ion-col>
+    </ion-row>
+  </ion-scroll>
+
+
+
+  <ion-row>
+    <ion-col class="text-align no-padding" col-3>
+         <p class="left-jobs-tag grad1" text-center>ALL LISTED JOBS</p>
+    </ion-col>
+    <ion-col class="text-align">
+    </ion-col>
+  </ion-row>
+
+  <div *ngFor="let img of [1,1,1,1,1,1,1]" class="card-scroll-vertical">
+    <ion-row>
+          <ion-col col-3 class="flex-center">
+             <img src="assets/imgs/line_logo.png" class="img-profile" />
+          </ion-col>
+          <ion-col class="text-align">
+            <div class="wid-100" text-left>
+              <p class="fs-14 text-black text-trans mar-set"><b>Senior UX Designer developer</b></p>
+              <p class="fs-12 text-grey-card mar-auto">Brookdale senior laverl</p>
+            </div>
+          </ion-col>
+        </ion-row>
+        <div class="bg-grey-card">
+           <ion-row>
+              <ion-col col-2 class="flex-center">
+                    <ion-icon name="home" class="s-icon-bg-circle bg-card-grey-color text-white"></ion-icon>
+              </ion-col>
+              <ion-col class="text-align">
+                  <span class="fs-12 text-grey-card">nursing Home</span>
+              </ion-col>
+           </ion-row>
+           <ion-row>
+              <ion-col col-2 class="flex-center">
+                    <ion-icon name="md-time" class="s-icon-bg-circle bg-card-grey-color text-white"></ion-icon>
+              </ion-col>
+              <ion-col class="text-align">
+                  <span class="fs-12 text-grey-card">12 Hrs / 8 Hrs</span>
+              </ion-col>
+           </ion-row>
+           <ion-row>
+              <ion-col col-2 class="flex-center">
+                    <ion-icon name="md-calendar" class="s-icon-bg-circle bg-card-grey-color text-white"></ion-icon>
+              </ion-col>
+              <ion-col class="text-align">
+                  <span class="fs-12 text-grey-card">3 - 4 Years </span>
+              </ion-col>
+               <ion-col class="flex-center"  col-4>
+                     
+                     <button ion-button small class="card-btn-class bg-card-grey-color text-white">3.5 away</button>
+                </ion-col>
+           </ion-row>
+           <ion-row>
+              <ion-col col-2 class="flex-center">
+                    <ion-icon name="md-pin" class="s-icon-bg-circle bg-card-grey-color text-white"></ion-icon>
+              </ion-col>
+              <ion-col class="text-align">
+                  <span class="fs-12 text-grey-card">mount Prospect, IL</span>
+              </ion-col>
+               <ion-col class="flex-center"  col-4>
+                     <button ion-button small class="card-btn-class bg-card-grey-color text-white ">Easy Apply</button>
+                </ion-col>
+           </ion-row>
+        </div>
+  </div>
+
+  <!-- <ion-slides [pager]="true " [loop]="true" style="height: 25% !important;">
+      <ion-slide class="wid-100" *ngFor="let img of [1,1,1,1,1,1,1]" >
+          <img src="assets/imgs/photos.jpg" class="center-image" />
+      </ion-slide>
+  </ion-slides>
+ -->
+
+</ion-content>

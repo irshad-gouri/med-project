@@ -1,0 +1,75 @@
+<!--
+  Generated template for the FeedsDetailsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title>feeds-details</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+	<ion-row >
+  <ion-col col-7>
+      <ion-item style="padding-left: 6px;">
+      <ion-avatar item-start style="margin-right: 8px;">
+        <img src="./assets/imgs/logo.png" >
+      </ion-avatar>
+      <div>
+      <h6 class="mar-auto fs-11">Jasmin Wigan Androson</h6>
+      <p class="fs-9 mar-auto">Registered Nurse at Brookdale</p>
+      <p class="fs-9 mar-auto">2hrs ago</p>
+      </div>
+  </ion-item>
+    </ion-col>
+  <ion-col col-3 class="text-align no-padding">
+     <ion-icon name="pin" class="fs-10"></ion-icon>&nbsp;
+     <span class="fs-10">Chicago,IL</span>
+  </ion-col>
+  <ion-col col-2 text-center>
+      <ion-icon name="ios-more" class="font-icon text-grey"></ion-icon>
+  </ion-col>
+</ion-row>
+
+<p class="pro-desc">Hello William, I have checked your resume and I believe you 
+have checked your resume and I believe you</p>
+
+
+
+<ion-slides pager style="height: 180px;">
+
+  <ion-slide *ngFor="let story of [1,1,1,1]" style="height: 180px;">
+    <img src="./assets/imgs/image1.png" style="height: 180px;">
+  </ion-slide>
+
+</ion-slides>
+
+ <ion-row>
+    <ion-col col-2>
+      <button ion-button icon-start clear small class="fs-10">
+        <ion-icon name="ios-heart" class="heart"></ion-icon>
+        <span class="text-black">2.6 k</span>
+      </button>
+    </ion-col>
+    <ion-col col-4>
+      <button ion-button icon-start clear small class="fs-10">
+        <ion-icon name="ios-more" class="more"></ion-icon>
+        <span class="text-black">2.6 k Comment </span>
+      </button>
+    </ion-col>
+    <ion-col col-4>
+      <button ion-button icon-start clear small class="fs-10">
+        <ion-icon name="md-share" class="text-grey more fs-9"></ion-icon>
+        <span class="text-black">100 k Share</span>
+      </button>
+    </ion-col>
+    <ion-col col-2>
+    </ion-col>
+  </ion-row>
+
+  <div>
+    <p class="p-text" text-center>VISIT SITE</p>
+  </div>
+</ion-content>

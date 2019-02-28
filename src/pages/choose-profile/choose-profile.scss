@@ -1,0 +1,40 @@
+page-choose-profile {
+	.p-text{
+		   padding: 4px 32px;
+		   color: #8D8888;
+		   line-height: 22px;
+	}
+	.contenthi{
+		padding-top: 36px !important;
+	}
+	
+
+.signBtn{
+	    background-image: linear-gradient(-90deg, #2A41E8, #7415F7);
+	    width: 100%;
+	    border-radius: 60px;
+	    padding: 30px;
+	    font-size: 16px;
+	    text-transform: initial;
+	    box-shadow: 0px 0px 8px #4135ee;
+	}
+
+	.font-icon{
+	    font-size: 14rem;
+	}
+	.pad-box1{
+		padding: 5px 12px 5px 28px;
+	}
+
+	.add-profile{
+	    border-radius: 50%;
+	    border: 3px solid #482fed;
+	    height: 200px !important;
+	    width: 200px !important;
+	    align-items: center;
+	    display: flex;
+	    justify-content: center;
+	    color: #482fed;
+	    margin: 42px auto;
+	}
+}

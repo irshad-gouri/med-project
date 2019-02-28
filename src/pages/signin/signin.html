@@ -1,0 +1,104 @@
+<!--
+  Generated template for the SigninPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<!-- <ion-header>
+  <ion-navbar>
+    <ion-title>signin</ion-title>
+  </ion-navbar>
+</ion-header> -->
+
+<ion-content padding>
+
+	<div text-center class="contenthi">
+		<img src="./assets/imgs/logoApp.png" class="imageLogo">
+		<p class="text-blue1 cursive-font">Professional network for Healthcare</p>
+	</div>
+	<div class="pedSeg">
+	  <ion-segment [(ngModel)]="pet">
+	    <ion-segment-button value="signin">
+	      SIGN IN
+	    </ion-segment-button>
+	    <ion-segment-button value="signup">
+	      SIGN UP
+	    </ion-segment-button>
+	  </ion-segment>
+	</div>
+	<div [ngSwitch]="pet">
+		  <ion-list *ngSwitchCase="'signin'">
+		  	<div class="logbox">
+			  <ion-item class="input-box">
+			    <ion-input type="email" placeholder="EMAIL"></ion-input>
+			  </ion-item>
+			  <br>
+
+			 
+			  <ion-row class="input-box pass-pad text-align">
+			  	<ion-col col-11>
+			  		<ion-input type="password" placeholder="PASSWORD"></ion-input>
+			  	</ion-col>
+			  	<ion-col col-1 class="no-padding">
+			  		<img class="icon" src="./assets/imgs/eye.png" style="width: 19px;">
+			  	</ion-col>
+			  </ion-row>
+			
+			  <p class="forgot fs-12" text-right>FORGOT PASSWORD?</p>
+			</div>
+			  
+			  <br><br><br>
+			  <button ion-button class="signBtn" (click)="goTabPage()" >Sign in</button>
+			  <br><br>
+			   <p class="forgot fs-10 flex-center">SKIP FOR NOW &nbsp;&nbsp;<ion-icon name="fastforward"></ion-icon></p>
+		  </ion-list>
+
+
+		  <ion-list *ngSwitchCase="'signup'">
+		    <div class="logbox">
+			  <ion-item class="input-box">
+			    <ion-input type="text" placeholder="FIRST NAME"></ion-input>
+			  </ion-item>
+			  <br>
+			  <ion-item class="input-box">
+			    <ion-input type="text" placeholder="LAST NAME"></ion-input>
+			  </ion-item>
+			  <br>
+			   <ion-item class="input-box">
+			   <ion-label class="text-black"><b>GENDER</b></ion-label>
+			    <ion-select [(ngModel)]="gaming">
+			      <ion-option value="Male">Male</ion-option>
+			      <ion-option value="Female">Female</ion-option>
+			      <ion-option value="Other">Other</ion-option>
+			    </ion-select>
+			  </ion-item>
+			  <br>
+			   <ion-item class="input-box">
+			   		<ion-input type="email" placeholder="EMAIL"></ion-input>
+			  </ion-item>
+			  <br>
+			  <ion-row class="input-box pass-pad text-align">
+			  	<ion-col col-11>
+			  		<ion-input type="password" placeholder="CHOOSE PASSWORD"></ion-input>
+			  	</ion-col>
+			  	<ion-col col-1 class="no-padding">
+			  		<img class="icon" src="./assets/imgs/eye.png" style="width: 19px;">
+			  	</ion-col>
+			  </ion-row>
+			</div>
+			<p class="forgot fs-10 text-grey" text-center >By creating an account you agree Medbord.Inc
+				<span class="text-blue1">terms and conditions </span>
+				and 
+				<span class="text-blue1">privacy policy</span>
+			</p>
+			<br>
+			<button ion-button class="signBtn" (click)="GoSignUp()">Continue</button>
+			<br><br>
+			<p class="forgot fs-10 flex-center" >SKIP FOR NOW &nbsp;&nbsp;
+				<ion-icon name="fastforward"></ion-icon>
+			</p>
+		  </ion-list>
+	</div>
+	<br><br>
+
+</ion-content>

@@ -1,0 +1,43 @@
+
+<ion-content padding>
+	<div text-center class="contenthi">
+		<img src="./assets/imgs/logoApp.png" class="imageLogo">
+		<p class="text-blue1 cursive-font">Professional network for Healthcare</p>
+	</div>
+	<h5 style="padding: 50px 20px 0px;"><b>Verify your phone number</b></h5>
+	<p text-center class="fs-11 p-text">Please enter the OTP sent to +12244282433 <span class="text-blue1">Incorrect Number? </span> 
+
+	</p>
+	<br>
+	<br>
+	<h6 text-center class="fs-10">Enter the OTP</h6>
+	
+	
+		<ion-row class="text-align pad-otp">
+			<ion-col col-3 >
+				<div class="input-box-bor">
+					 <ion-input type="number" placeholder="2" text-center></ion-input>
+				</div>
+			</ion-col>
+		  	<ion-col col-3>
+		  		 <div class="input-box-bor">
+					 <ion-input type="number" placeholder="2" text-center></ion-input>
+				</div>
+		  	</ion-col>
+		  	<ion-col col-3>
+		  		 <div class="input-box-bor">
+					 <ion-input type="number" placeholder="2" text-center></ion-input>
+				</div>
+		  	</ion-col>
+		  	<ion-col col-3>
+		  		<div class="input-box-bor">
+					 <ion-input type="number" placeholder="2" text-center></ion-input>
+				</div>
+		  	</ion-col>
+		</ion-row>
+
+	<button text-center clear class="fs-10 text-blue1 bg-none wid-100">Didn’t receive OTP ? Resend </button> 
+	<br>
+	<br>
+	<button ion-button class="signBtn" (click)="GoProfileUpdate()">Verify</button>
+</ion-content>

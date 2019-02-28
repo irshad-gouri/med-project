@@ -1,0 +1,70 @@
+
+
+<ion-content padding>
+	<div text-center class="contenthi">
+		<img src="./assets/imgs/logoApp.png" class="imageLogo">
+		<p class="text-blue1 cursive-font">Professional network for Healthcare</p>
+	</div>
+	<br><br><br>
+	<ion-row class="input-box pass-pad text-align">
+		<ion-col col-4 class="no-padding">
+			<span class="fs-11"><b>Education Level</b></span>
+		</ion-col>
+	  	<ion-col col-7>
+		    <ion-select [(ngModel)]="education" class="no-padding">
+		      <ion-option value="Graduate">Graduate</ion-option>
+		      <ion-option value="12">12</ion-option>
+		      <ion-option value="NEW">NEW</ion-option>
+		    </ion-select>
+	  	</ion-col>
+	  	<ion-col col-1 class="no-padding flex-center">
+	  		<ion-icon name="ios-arrow-forward" class="fs-24 text-black fs-w8"></ion-icon>
+	  	</ion-col>
+	</ion-row>
+	<br>
+	<ion-row class="input-box pass-pad text-align">
+		<ion-col col-4 class="no-padding">
+			<span class="fs-11"><b>Profession</b></span>
+		</ion-col>
+	  	<ion-col col-7>
+		    <ion-select [(ngModel)]="profession" class="no-padding">
+		      <ion-option value="Dancer">Dancer</ion-option>
+		      <ion-option value="Sports">Sports</ion-option>
+		      <ion-option value="NEW">NEW</ion-option>
+		    </ion-select>
+	  	</ion-col>
+	  	<ion-col col-1 class="no-padding flex-center">
+	  		<ion-icon name="ios-arrow-forward" class="fs-24 text-black fs-w8"></ion-icon>
+	  	</ion-col>
+	</ion-row>
+	<br>
+	<ion-row class="input-box pad-box1 text-align">
+		<ion-col col-3 class="no-padding">
+			<span class="fs-11"><b>Job title</b></span>
+		</ion-col>
+	  	<ion-col col-9>
+		    <ion-input type="number" placeholder="Eg: Registered Nurse"></ion-input>
+	  	</ion-col>
+	</ion-row>
+	<br>
+	<ion-row class="input-box pass-pad text-align">
+		<ion-col col-4 class="no-padding">
+			<span class="fs-11"><b>Experience</b></span>
+		</ion-col>
+	  	<ion-col col-7>
+		    <ion-select [(ngModel)]="experience" class="no-padding">
+		      <ion-option value="Pharma">Pharma</ion-option>
+		      <ion-option value="Medical">Medical</ion-option>
+		      <ion-option value="NEW">NEW</ion-option>
+		    </ion-select>
+	  	</ion-col>
+	  	<ion-col col-1 class="no-padding flex-center">
+	  		<ion-icon name="ios-arrow-forward" class="fs-24 text-black fs-w8"></ion-icon>
+	  	</ion-col>
+	</ion-row>
+	<br>
+
+	<button ion-button class="signBtn" (click)="GoPhoneVarifyNumber()">Continue</button>
+	<br>
+	<p class="fs-10 flex-center text-blue1">SKIP FOR NOW &nbsp;&nbsp;<ion-icon name="fastforward"></ion-icon></p>
+</ion-content>

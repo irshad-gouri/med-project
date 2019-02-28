@@ -1,0 +1,50 @@
+<!-- <ion-header>
+  <ion-navbar>
+    <ion-title>phone-varify</ion-title>
+  </ion-navbar>
+</ion-header> -->
+<ion-content padding>
+	<div text-center class="contenthi">
+		<img src="./assets/imgs/logoApp.png" class="imageLogo">
+		<p class="text-blue1 cursive-font">Professional network for Healthcare</p>
+	</div>
+	<h5 style="padding: 50px 20px 0px;"><b>Verify your phone number</b></h5>
+	<p text-center class="fs-11 p-text">
+		Enter your phone number to receive the OTP  
+		Sms or data charge may very
+	</p>
+	<br>
+	<br>
+	<h6 text-center class="fs-10">Enter the mobile number</h6>
+
+	<ion-row class="input-box pass-pad text-align">
+		<ion-col col-3 class="no-padding">
+			<span class="fs-10"><b>COUNTRY</b></span>
+		</ion-col>
+	  	<ion-col col-8>
+		    <ion-select [(ngModel)]="gaming">
+		      <ion-option value="INDIA">INDIA</ion-option>
+		      <ion-option value="AMERICA">AMERICA</ion-option>
+		      <ion-option value="NEW">NEW</ion-option>
+		    </ion-select>
+	  	</ion-col>
+	  	<ion-col col-1 class="no-padding flex-center">
+	  		<ion-icon name="ios-arrow-forward" class="fs-24 text-blue1"></ion-icon>
+	  	</ion-col>
+	</ion-row>
+	<br>
+	<ion-row class="input-box pad-box1 text-align">
+		<ion-col col-3 class="no-padding">
+			<span class="fs-10"><b>NUMBER</b></span>
+		</ion-col>
+	  	<ion-col col-8>
+		    <ion-input type="number" placeholder="2233554466"></ion-input>
+	  	</ion-col>
+	  	<ion-col col-1 class="no-padding flex-center">
+	  		<ion-icon name="ios-close-circle-outline" class="fs-20 text-black"></ion-icon>
+	  	</ion-col>
+	</ion-row>
+	<br>
+	<button ion-button class="signBtn" (click)="GoVarification()">Continue</button>
+
+</ion-content>

@@ -1,0 +1,54 @@
+page-phone-varify {
+	.p-text{
+		   padding: 4px 32px;
+		   color: #8D8888;
+		   line-height: 22px;
+	}
+	.contenthi{
+		padding-top: 36px !important;
+	}
+	.input-box{
+	padding: 12px 12px 12px 28px;
+    border-radius: 60px;
+    font-size: 12px;
+    border: 1px solid #c5c4c4;
+	}
+
+	/*.select-md .select-icon .select-icon-inner {
+    left: 5px;
+    top: 50%;
+    margin-top: -3px;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 5px solid;
+    border-bottom: 5px solid transparent;
+    border-top: 5px solid transparent;
+    pointer-events: none;
+}*/
+
+.signBtn{
+	    background-image: linear-gradient(-90deg, #2A41E8, #7415F7);
+	    width: 100%;
+	    border-radius: 60px;
+	    padding: 30px;
+	    font-size: 16px;
+	    text-transform: initial;
+	    box-shadow: 0px 0px 8px #4135ee;
+	}
+
+	ion-select.select{
+	    width: 100% !important;
+	    max-width: 100% !important;
+	    align-items: center;
+	    display: flex;
+	}
+
+	.select-icon {
+    display: none !important;
+}
+
+.pad-box1{
+	padding: 5px 12px 5px 28px;
+}
+}

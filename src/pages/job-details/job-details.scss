@@ -1,0 +1,144 @@
+page-job-details {
+		.scroll-content {
+    // How far down does the content begin
+    padding-top: 30vh !important;
+    // Needs to be transparent so we see the fixed-content image-background
+    background-color: transparent;
+  }
+
+  /*.toolbar-md-primary {
+      background: #4228bc !important;
+  }*/
+
+  ion-navbar#second-header {
+    .toolbar-background {
+      opacity: 0;
+    }
+    .toolbar-title {
+      font-size: 3rem !important;
+      text-align: center !important;
+      color: color($colors, primary-color-text);
+    }
+  }
+
+  .border-grey{
+    border: 1px solid #e2e2e2  !important;
+  }
+
+  .dire-btn{
+    font-size: 9px !important;
+    height: 2.6rem !important;
+    letter-spacing: 1px !important;
+    margin: 10px 0px 0px 0px !important;
+  }
+
+  .grad2{
+        margin: 0px 12px !important;
+  }
+
+  .btn-apply {
+    background: #3319b2 !important;
+    height: 3rem !important; 
+    font-size: 10px !important;
+    letter-spacing: 1px !important;
+    width: 80% !important;
+}
+
+.btn-cas {
+    border-radius: 20px !important;
+    width: 60% !important;
+    height: 1.4rem !important;
+    font-size: 6px !important;
+    background: #3319b2 !important;
+}
+
+.status-dot{
+      background: green;
+    height: 8px;
+    width: 8px;
+    margin-right: 4px;
+    border-radius: 10px;
+}
+
+/*.toolbar-title {
+    padding: 0px 4px !important;
+}*/
+
+  .bor-left{
+     border-left: none !important; 
+     height: 100%;
+    margin-right: 3px;
+  }
+
+  .bor-right{
+   
+    border-right: none !important;
+  }
+
+  .bor-ryt{
+    border-right: 1px solid #c3c2c2;
+    width: 100% !important;
+    text-align: center !important;
+  }
+
+   .ped-left-zero{
+        padding-left: 0px !important
+      }
+    .ped-ryt-zero{
+      padding-right: 0px !important
+    }
+
+    .bor-you{
+      border: 1px solid #e6e6e6 !important;  
+    }
+
+  /*.img-profile{
+    height: 50px;
+      width: 50px;
+      border-radius: 50%;
+      border: 1px solid black;
+      padding: 2px;
+  }
+
+  .center-image{
+        width: 250px;
+        height: 250px;
+        object-fit: contain;
+        margin: auto;
+  }
+
+  .card-bg{
+      border-radius: 16px !important;
+      padding: 14px !important;
+  }
+
+  .play-icon{
+        font-size: 28px;
+        background: white;
+        color: black !important;
+        border-radius: 50%;
+        height: 60px;
+        width: 60px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+  }
+
+  .text-trans{
+      text-transform: uppercase;
+  }
+
+  .toolbar-background {
+      background: #ffffff !important;
+  }*/
+
+  ion-content {
+    .fixed-content {
+      margin-top: 0 !important;
+      background: color($colors, item-background-color) url('../assets/imgs/office-back.jpg') no-repeat;
+      /*background-color: black !important;*/
+      background-size: auto;
+      background-position: right;
+    }
+  }
+}
