@@ -1,5 +1,8 @@
 {
   "name": "Medbord",
-  "integrations": {},
-  "type": "ionic-angular"
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular",
+  "id": "7162600c"
 }

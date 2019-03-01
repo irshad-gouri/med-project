@@ -4,8 +4,8 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 // import { TabsPage } from '../pages/tabs/tabs';
-//import { SigninPage } from '../pages/signin/signin';
-import { ConnectPage } from '../pages/connect/connect';
+import { SigninPage } from '../pages/signin/signin';
+//import { ConnectPage } from '../pages/connect/connect';
 
 
 
@@ -13,7 +13,7 @@ import { ConnectPage } from '../pages/connect/connect';
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage:any = ConnectPage;
+  rootPage:any = SigninPage;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
     platform.ready().then(() => {
