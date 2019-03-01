@@ -1,0 +1,49 @@
+<ion-header>
+    <ion-navbar class="bg-white">
+        <ion-title class="text-black">
+            <b class="text-black">CONNECT</b>
+        </ion-title>
+    </ion-navbar>
+    <ion-row>
+        <ion-col col-2 class="flex-center">
+            <ion-icon name="ios-compass-outline" class="icon-bg-circle"></ion-icon>
+        </ion-col>
+        <ion-col col-8 class="text-align">
+            <ion-searchbar placeholder="SEARCH KEYWORD" class="no-padding"></ion-searchbar>
+        </ion-col>
+        <ion-col col-2 class="flex-center">
+            <ion-icon name="" class="icon-bg-circle" (click)="openModal()">
+                <img src="./assets/imgs/funnel.png" class="funnl-icon">
+            </ion-icon>
+        </ion-col>
+    </ion-row>
+</ion-header>
+
+<ion-content>
+    <ion-row *ngFor="let story of [1,1,1,1,1,1,1]" class="row-pad">
+        <ion-col col-3 class="flex-center">
+            <img src="./assets/imgs/girls.png" class="bordImg hi-set">
+        </ion-col>
+        <ion-col col-7 class="no-padding text-align">
+            <div class="wid-100">
+                <div>
+                    <span class="fs-11 text-black">Jasmin Wigan</span>&nbsp;&nbsp;<span class="fs-8">Chicago, USA</span>
+                </div>
+                <div text-center>
+                    <button ion-button icon-start clear small class="post-btn">
+                <span class="">Connect</span>
+              </button>
+                    <button ion-button icon-start clear small class="post-btn">
+                <span class="">Message</span>
+              </button>
+                </div>
+            </div>
+        </ion-col>
+        <ion-col col-2 class="end-flex">
+            <button ion-button icon-start clear small class="no-padding no-margin">
+              <img src="./assets/imgs/delete.png" class="delete">
+      </button>
+        </ion-col>
+    </ion-row>
+
+</ion-content>

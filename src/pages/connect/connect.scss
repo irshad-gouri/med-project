@@ -1,0 +1,69 @@
+page-connect {
+    .icon-bg-circle {
+        font-size: 22px;
+        background-image: linear-gradient(-90deg, #303CE9, #7415F7);
+        color: white !important;
+        border-radius: 50%;
+        height: 32px;
+        width: 32px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+    input.searchbar-input {
+        width: 100% !important;
+        border-radius: 20px !important;
+        padding: 6px 0px !important;
+        text-align: center !important;
+        background: #f4f4f4 !important;
+        color: black !important;
+        font-size: 13px !important;
+        box-shadow: none !important;
+    }
+    .searchbar-search-icon {
+        display: none;
+    }
+    input.searchbar-input::placeholder {
+        color: black !important;
+    }
+    .grad1 {
+        background-image: linear-gradient(to bottom, #2A41E8, #51B8C6);
+    }
+    .funnl-icon {
+        width: 19px;
+        background: white;
+        padding: 4px;
+        border-radius: 20px;
+    }
+    .bordImg {
+        border-radius: 50%;
+        border: 1px solid #3d35ec;
+        padding: 1px;
+        height: 54px;
+        width: 54px;
+    }
+    .post-btn {
+        background-image: linear-gradient(to left, #303CE9, #7415F7);
+        font-size: 8px !important;
+        color: white !important;
+        border-radius: 22px;
+        width: 46%;
+        padding: 13px;
+        text-transform: initial;
+    }
+    .delete {
+        height: 26px;
+        width: 24px;
+        border: 1px solid #dcd9d9;
+        border-radius: 20px;
+        padding: 4px;
+    }
+    .end-flex {
+        align-items: flex-end;
+        display: flex;
+    }
+    .row-pad {
+        padding: 5px 0px;
+        border-bottom: 1px solid darkgrey;
+    }
+}

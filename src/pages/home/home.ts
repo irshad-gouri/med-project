@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { FeedsDetailsPage } from '../feeds-details/feeds-details';
+import { ConnectPage } from '../connect/connect';
 
 @Component({
   selector: 'page-home',
@@ -23,6 +24,9 @@ export class HomePage {
     this.buttonClicked = !this.buttonClicked;
   }
 
+  public goConnectPage(){
+    this.navCtrl.push(ConnectPage)
+  }
   
 
 }

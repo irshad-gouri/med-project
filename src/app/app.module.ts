@@ -6,6 +6,7 @@ import {AnimatedHeaderComponentClass} from "../components/animated-header/animat
 import { AboutPage } from '../pages/about/about';
 import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
+import { ConnectPage } from '../pages/connect/connect';
 import { TabsPage } from '../pages/tabs/tabs';
 import { SigninPage } from '../pages/signin/signin';
 import { SignupPage } from '../pages/signup/signup';
@@ -33,6 +34,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     JobDetailsPage,
     ContactPage,
     HomePage,
+    ConnectPage,
     FeedsDetailsPage,
     TabsPage
   ],
@@ -53,6 +55,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     JobDetailsPage,
     ContactPage,
     HomePage,
+    ConnectPage,
     FeedsDetailsPage,
     TabsPage
   ],
