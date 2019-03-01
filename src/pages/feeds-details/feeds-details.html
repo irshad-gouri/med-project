@@ -6,7 +6,7 @@
 -->
 <ion-header>
   <ion-navbar>
-    <ion-title>feeds-details</ion-title>
+    <ion-title>Feeds</ion-title>
   </ion-navbar>
 </ion-header>
 
@@ -23,7 +23,7 @@
       <p class="fs-9 mar-auto">2hrs ago</p>
       </div>
   </ion-item>
-    </ion-col>
+</ion-col>
   <ion-col col-3 class="text-align no-padding">
      <ion-icon name="pin" class="fs-10"></ion-icon>&nbsp;
      <span class="fs-10">Chicago,IL</span>
@@ -69,7 +69,18 @@ have checked your resume and I believe you</p>
     </ion-col>
   </ion-row>
 
-  <div>
-    <p class="p-text" text-center>VISIT SITE</p>
+  <div padding> 
+    <p class="p-text text-grey">People like this post</p>
+    <ion-row *ngFor="let story of [1,1,1,1]" style="    border: 1px solid #e4e4e4;
+    border-radius: 40px;
+    margin: 12px 0px;">
+    <ion-col col-3 class="text-align" >
+      <img src="./assets/imgs/girls.png" style="    width: 45px;
+    height: 45px;" >
+    </ion-col>
+    <ion-col col-9 class="text-align">
+      <span class="">Linda Millow </span> 
+    </ion-col>
+    </ion-row>
   </div>
 </ion-content>

@@ -307,3 +307,7 @@ span, div{
             font-size: 15px !important;
             margin: 8px auto !important;
     }
+
+    .tab-button[aria-selected=true] .tab-button-icon {
+    color: #1023ad !important;
+}
