@@ -1,401 +1,561 @@
 <ion-header>
-<ion-navbar class="bg-none">
-    <ion-title class="text-black">
-      Feeds
-    </ion-title>
-  </ion-navbar>
- <ion-row>
-    <ion-col col-2 class="flex-center">
-         <ion-icon name="ios-compass-outline" class="icon-bg-circle"></ion-icon>
-    </ion-col>
-    <ion-col col-8 class="text-align">
-      <ion-segment [(ngModel)]="pet">
-        <ion-segment-button value="trending">
-          Trending
-        </ion-segment-button>
-        <ion-segment-button value="myfeeds">
-          My Feeds
-        </ion-segment-button>
-      </ion-segment>
-    </ion-col>
-    <ion-col col-2 class="flex-center">
-       <ion-icon name="" class="icon-bg-circle">
-         <img src="./assets/imgs/user.png" class="icon-user">
-       </ion-icon>
-    </ion-col>
-  </ion-row>
+    <ion-navbar class="bg-none">
+        <ion-title class="text-black">
+            Feeds
+        </ion-title>
+    </ion-navbar>
+    <ion-row>
+        <ion-col col-2 class="flex-center">
+            <ion-icon name="ios-compass-outline" class="icon-bg-circle"></ion-icon>
+        </ion-col>
+        <ion-col col-8 class="text-align">
+            <ion-segment [(ngModel)]="pet">
+                <ion-segment-button value="trending">
+                    Trending
+                </ion-segment-button>
+                <ion-segment-button value="myfeeds">
+                    My Feeds
+                </ion-segment-button>
+            </ion-segment>
+        </ion-col>
+        <ion-col col-2 class="flex-center">
+            <ion-icon name="" class="icon-bg-circle">
+                <img src="./assets/imgs/user.png" class="icon-user">
+            </ion-icon>
+        </ion-col>
+    </ion-row>
 </ion-header>
 
- <ion-fab bottom right edge>
+<ion-fab bottom right edge>
     <button ion-fab mini class="bg-bl"><ion-icon name="add"></ion-icon></button>
-    </ion-fab>
+</ion-fab>
 
 
 <ion-content>
 
-<div [ngSwitch]="pet">
-      <div *ngSwitchCase="'trending'" class="bg-white">
-        <hr class="hr-divider">
-<ion-scroll scrollX="true" class="scroll-height">
-<ion-row nowrap>
-  <ion-col  *ngFor="let story of [1,1,1,1]">
-        <img src="./assets/imgs/girls.png" class="bordImg hi-set">
-  </ion-col>
-  <ion-col>
-    <button class="bg-none add-profile hi-set">
+    <div [ngSwitch]="pet">
+        <div *ngSwitchCase="'trending'" class="bg-white">
+            <hr class="hr-divider">
+            <ion-scroll scrollX="true" class="scroll-height">
+                <ion-row nowrap>
+                    <ion-col *ngFor="let story of [1,1,1,1]">
+                        <img src="./assets/imgs/girls.png" class="bordImg hi-set">
+                    </ion-col>
+                    <ion-col>
+                        <button class="bg-none add-profile hi-set">
       <ion-icon name="ios-add" class="font-icon"></ion-icon>
     </button>
-  </ion-col>
-</ion-row>
-</ion-scroll>
+                    </ion-col>
+                </ion-row>
+            </ion-scroll>
 
-<ion-row >
-  <ion-col col-7>
-      <ion-item style="padding-left: 6px;">
-      <ion-avatar item-start style="    margin-right: 8px;">
-        <img src="./assets/imgs/girls.png" >
-      </ion-avatar>
-      <div>
-      <h6 class="mar-auto fs-11">Jasmin Wigan Androson</h6>
-      <p class="fs-9 mar-auto">Registered Nurse at Brookdale</p>
-      <p class="fs-9 mar-auto">2hrs ago</p>
-      </div>
-  </ion-item>
-    </ion-col>
-  <ion-col col-3 class="text-align no-padding">
-     <ion-icon name="pin" class="fs-10"></ion-icon>&nbsp;
-     <span class="fs-10">Chicago,IL</span>
-  </ion-col>
-  <ion-col col-2 text-center>
-      <ion-icon name="ios-more" class="font-icon text-grey"></ion-icon>
-  </ion-col>
-</ion-row>
+            <ion-row>
+                <ion-col col-7>
+                    <ion-item style="padding-left: 6px;">
+                        <ion-avatar item-start style="    margin-right: 8px;">
+                            <img src="./assets/imgs/girls.png">
+                        </ion-avatar>
+                        <div>
+                            <h6 class="mar-auto fs-11">Jasmin Wigan Androson</h6>
+                            <p class="fs-9 mar-auto">Registered Nurse at Brookdale</p>
+                            <p class="fs-9 mar-auto">2hrs ago</p>
+                        </div>
+                    </ion-item>
+                </ion-col>
+                <ion-col col-3 class="text-align no-padding">
+                    <ion-icon name="pin" class="fs-10"></ion-icon>&nbsp;
+                    <span class="fs-10">Chicago,IL</span>
+                </ion-col>
+                <ion-col col-2 text-center>
+                    <ion-icon name="ios-more" class="font-icon text-grey"></ion-icon>
+                </ion-col>
+            </ion-row>
 
-<p class="pro-desc">Hello William, I have checked your resume and I believe you 
-have checked your resume and I believe you</p>
+            <p class="pro-desc">Hello William, I have checked your resume and I believe you have checked your resume and I believe you</p>
 
-<img src="./assets/imgs/laptop.png">
+            <img src="./assets/imgs/laptop.png">
 
- <ion-row>
-    <ion-col col-2>
-      <button ion-button icon-start clear small class="fs-10">
+            <ion-row>
+                <ion-col col-2>
+                    <button ion-button icon-start clear small class="fs-10">
         <ion-icon name="ios-heart" class="heart"></ion-icon>
         <span class="text-black">2.6 k</span>
       </button>
-    </ion-col>
-    <ion-col col-4>
-      <button ion-button icon-start clear small class="fs-10">
+                </ion-col>
+                <ion-col col-4>
+                    <button ion-button icon-start clear small class="fs-10">
         <ion-icon name="ios-more" class="more"></ion-icon>
         <span class="text-black">2.6 k Comment </span>
       </button>
-    </ion-col>
-    <ion-col col-4>
-      <button ion-button icon-start clear small class="fs-10">
+                </ion-col>
+                <ion-col col-4>
+                    <button ion-button icon-start clear small class="fs-10">
         <ion-icon name="md-share" class="text-grey more fs-9"></ion-icon>
         <span class="text-black">Share</span>
       </button>
-    </ion-col>
-    <ion-col col-2>
-    </ion-col>
-  </ion-row>
+                </ion-col>
+                <ion-col col-2>
+                </ion-col>
+            </ion-row>
 
-  <hr class="hr-divider">
+            <hr class="hr-divider">
 
-  <ion-row >
-  <ion-col col-7>
-      <ion-item style="padding-left: 6px;">
-      <ion-avatar item-start style="    margin-right: 8px;">
-        <img src="./assets/imgs/girl2.png" >
-      </ion-avatar>
-      <div>
-      <h6 class="mar-auto fs-11">Jasmin Wigan Androson</h6>
-      <p class="fs-9 mar-auto">Registered Nurse at Brookdale</p>
-      <p class="fs-9 mar-auto">2hrs ago</p>
-      </div>
-  </ion-item>
-    </ion-col>
-  <ion-col col-3 class="text-align no-padding">
-     <ion-icon name="pin" class="fs-10"></ion-icon>&nbsp;
-     <span class="fs-10">Chicago,IL</span>
-  </ion-col>
-  <ion-col col-2 text-center>
-      <ion-icon name="ios-more" class="font-icon text-grey"></ion-icon>
-  </ion-col>
-</ion-row>
+            <ion-row>
+                <ion-col col-7>
+                    <ion-item style="padding-left: 6px;">
+                        <ion-avatar item-start style="    margin-right: 8px;">
+                            <img src="./assets/imgs/girl2.png">
+                        </ion-avatar>
+                        <div>
+                            <h6 class="mar-auto fs-11">Jasmin Wigan Androson</h6>
+                            <p class="fs-9 mar-auto">Registered Nurse at Brookdale</p>
+                            <p class="fs-9 mar-auto">2hrs ago</p>
+                        </div>
+                    </ion-item>
+                </ion-col>
+                <ion-col col-3 class="text-align no-padding">
+                    <ion-icon name="pin" class="fs-10"></ion-icon>&nbsp;
+                    <span class="fs-10">Chicago,IL</span>
+                </ion-col>
+                <ion-col col-2 text-center>
+                    <ion-icon name="ios-more" class="font-icon text-grey"></ion-icon>
+                </ion-col>
+            </ion-row>
 
-<p class="pro-desc">Hello William, I have checked your resume and I believe you 
-have checked your resume and I believe you</p>
+            <p class="pro-desc">Hello William, I have checked your resume and I believe you have checked your resume and I believe you</p>
 
-<ion-row>
-    <ion-col col-2>
-      <button ion-button icon-start clear small class="fs-10">
+            <ion-row>
+                <ion-col col-2>
+                    <button ion-button icon-start clear small class="fs-10">
         <ion-icon name="ios-heart" class="heart"></ion-icon>
         <span class="text-black">2.6 k</span>
       </button>
-    </ion-col>
-    <ion-col col-4>
-      <button ion-button icon-start clear small class="fs-10">
+                </ion-col>
+                <ion-col col-4>
+                    <button ion-button icon-start clear small class="fs-10">
         <ion-icon name="ios-more" class="more"></ion-icon>
         <span class="text-black">2.6 k Comment </span>
       </button>
-    </ion-col>
-    <ion-col col-4>
-      <button ion-button icon-start clear small class="fs-10">
+                </ion-col>
+                <ion-col col-4>
+                    <button ion-button icon-start clear small class="fs-10">
         <ion-icon name="md-share" class="text-grey more fs-9"></ion-icon>
         <span class="text-black">100 k Share</span>
       </button>
-    </ion-col>
-    <ion-col col-2>
-    </ion-col>
-  </ion-row>
+                </ion-col>
+                <ion-col col-2>
+                </ion-col>
+            </ion-row>
 
-  <hr class="hr-divider">
+            <hr class="hr-divider">
 
-  <ion-row >
-  <ion-col col-7>
-      <ion-item style="padding-left: 6px;">
-      <ion-avatar item-start style="    margin-right: 8px;">
-        <img src="./assets/imgs/girls.png" >
-      </ion-avatar>
-      <div>
-      <h6 class="mar-auto fs-11">Jasmin Wigan Androson</h6>
-      <p class="fs-9 mar-auto">Registered Nurse at Brookdale</p>
-      <p class="fs-9 mar-auto">2hrs ago</p>
-      </div>
-  </ion-item>
-    </ion-col>
-  <ion-col col-3 class="text-align no-padding">
-     <ion-icon name="pin" class="fs-10"></ion-icon>&nbsp;
-     <span class="fs-10">Chicago,IL</span>
-  </ion-col>
-  <ion-col col-2 text-center>
-      <ion-icon name="ios-more" class="font-icon text-grey"></ion-icon>
-  </ion-col>
-</ion-row>
+            <ion-row>
+                <ion-col col-7>
+                    <ion-item style="padding-left: 6px;">
+                        <ion-avatar item-start style="    margin-right: 8px;">
+                            <img src="./assets/imgs/girls.png">
+                        </ion-avatar>
+                        <div>
+                            <h6 class="mar-auto fs-11">Jasmin Wigan Androson</h6>
+                            <p class="fs-9 mar-auto">Registered Nurse at Brookdale</p>
+                            <p class="fs-9 mar-auto">2hrs ago</p>
+                        </div>
+                    </ion-item>
+                </ion-col>
+                <ion-col col-3 class="text-align no-padding">
+                    <ion-icon name="pin" class="fs-10"></ion-icon>&nbsp;
+                    <span class="fs-10">Chicago,IL</span>
+                </ion-col>
+                <ion-col col-2 text-center>
+                    <ion-icon name="ios-more" class="font-icon text-grey"></ion-icon>
+                </ion-col>
+            </ion-row>
 
-<p class="pro-desc">Hello William, I have checked your resume and I believe you 
-have checked your resume and I believe you</p>
+            <p class="pro-desc">Hello William, I have checked your resume and I believe you have checked your resume and I believe you</p>
 
-<ion-row>
-    <ion-col col-2>
-      <button ion-button icon-start clear small class="fs-10">
+            <ion-row>
+                <ion-col col-2>
+                    <button ion-button icon-start clear small class="fs-10">
         <ion-icon name="ios-heart" class="heart"></ion-icon>
         <span class="text-black">2.6 k</span>
       </button>
-    </ion-col>
-    <ion-col col-4>
-      <button ion-button icon-start clear small class="fs-10">
+                </ion-col>
+                <ion-col col-4>
+                    <button ion-button icon-start clear small class="fs-10">
         <ion-icon name="ios-more" class="more"></ion-icon>
         <span class="text-black">2.6 k Comment </span>
       </button>
-    </ion-col>
-    <ion-col col-4>
-      <button ion-button icon-start clear small class="fs-10">
+                </ion-col>
+                <ion-col col-4>
+                    <button ion-button icon-start clear small class="fs-10">
         <ion-icon name="md-share" class="text-grey more fs-9"></ion-icon>
         <span class="text-black">100 k Share</span>
       </button>
-    </ion-col>
-    <ion-col col-2>
-    </ion-col>
-  </ion-row>
+                </ion-col>
+                <ion-col col-2>
+                </ion-col>
+            </ion-row>
 
-  <ion-scroll scrollX="true" class="scrl-ht">
-<ion-row nowrap class="bg-grey">
-  <ion-col  *ngFor="let story of [1,1,1,1]" class="box-div">
-    <div text-center>
-         <img src="./assets/imgs/girls.png" class="" style="    height: 84px !important;
-    width: 84px !important;">
-      <div class="bg-gread">
-          <h5 text-center class="mar-auto fs-15">Jasmin max</h5>
-          <p class="fs-9 mar-auto">Registed Nurse</p>
-          <button class="button-connect">
-            Connect 2.8k
-          </button>
-      </div>
+            <ion-scroll scrollX="true" class="scrl-ht">
+                <ion-row nowrap class="bg-grey">
+                    <ion-col *ngFor="let story of [1,1,1,1]" class="box-div">
+                        <div text-center>
+                            <img src="./assets/imgs/girls.png" class="" style="    height: 84px !important;width: 84px !important;">
+                            <div class="bg-gread">
+                                <h5 text-center class="mar-auto fs-15">Jasmin max</h5>
+                                <p class="fs-9 mar-auto">Registed Nurse</p>
+                                <button class="button-connect">Connect 2.8k</button>
+                            </div>
+                        </div>
+
+                    </ion-col>
+                </ion-row>
+            </ion-scroll>
+
+            <ion-row (click)="goFeedDetails()">
+                <ion-col col-7>
+                    <ion-item style="padding-left: 6px;">
+                        <ion-avatar item-start style="margin-right: 8px;">
+                            <img src="./assets/imgs/logo.png">
+                        </ion-avatar>
+                        <div>
+                            <h6 class="mar-auto fs-11">Jasmin Wigan Androson</h6>
+                            <p class="fs-9 mar-auto">Registered Nurse at Brookdale</p>
+                            <p class="fs-9 mar-auto">2hrs ago</p>
+                        </div>
+                    </ion-item>
+                </ion-col>
+                <ion-col col-3 class="text-align no-padding">
+                    <ion-icon name="pin" class="fs-10"></ion-icon>&nbsp;
+                    <span class="fs-10">Chicago,IL</span>
+                </ion-col>
+                <ion-col col-2 text-center>
+                    <ion-icon name="ios-more" class="font-icon text-grey"></ion-icon>
+                </ion-col>
+            </ion-row>
+
+            <p class="pro-desc">Hello William, I have checked your resume and I believe you have checked your resume and I believe you</p>
+
+            <img src="./assets/imgs/image1.png">
+
+            <ion-row>
+                <ion-col col-2>
+                    <button ion-button icon-start clear small class="fs-10">
+        <ion-icon name="ios-heart" class="heart"></ion-icon>
+        <span class="text-black">2.6 k</span>
+      </button>
+                </ion-col>
+                <ion-col col-4>
+                    <button ion-button icon-start clear small class="fs-10">
+        <ion-icon name="ios-more" class="more"></ion-icon>
+        <span class="text-black">2.6 k Comment </span>
+      </button>
+                </ion-col>
+                <ion-col col-4>
+                    <button ion-button icon-start clear small class="fs-10">
+        <ion-icon name="md-share" class="text-grey more fs-9"></ion-icon>
+        <span class="text-black">Share</span>
+      </button>
+                </ion-col>
+                <ion-col col-2>
+                </ion-col>
+            </ion-row>
+
+            <div>
+                <p class="p-text" text-center>VISIT SITE</p>
+            </div>
+
+            <hr class="hr-divider">
+
+            <ion-row>
+                <ion-col col-7>
+                    <ion-item style="padding-left: 6px;">
+                        <ion-avatar item-start style="    margin-right: 8px;">
+                            <img src="./assets/imgs/girls.png">
+                        </ion-avatar>
+                        <div>
+                            <h6 class="mar-auto fs-11">Jasmin Wigan Androson</h6>
+                            <p class="fs-9 mar-auto">Registered Nurse at Brookdale</p>
+                            <p class="fs-9 mar-auto">2hrs ago</p>
+                        </div>
+                    </ion-item>
+                </ion-col>
+                <ion-col col-3 class="text-align no-padding">
+                    <ion-icon name="pin" class="fs-10"></ion-icon>&nbsp;
+                    <span class="fs-10">Chicago,IL</span>
+                </ion-col>
+                <ion-col col-2 text-center>
+                    <ion-icon name="ios-more" class="font-icon text-grey"></ion-icon>
+                </ion-col>
+            </ion-row>
+
+            <p class="pro-desc">Hello William, I have checked your resume and I believe you have checked your resume and I believe you</p>
+
+            <ion-row>
+                <ion-col col-2>
+                    <button ion-button icon-start clear small class="fs-10">
+        <ion-icon name="ios-heart" class="heart"></ion-icon>
+        <span class="text-black">2.6 k</span>
+      </button>
+                </ion-col>
+                <ion-col col-4>
+                    <button ion-button icon-start clear small class="fs-10">
+        <ion-icon name="ios-more" class="more"></ion-icon>
+        <span class="text-black">2.6 k Comment </span>
+      </button>
+                </ion-col>
+                <ion-col col-4>
+                    <button ion-button icon-start clear small class="fs-10">
+        <ion-icon name="md-share" class="text-grey more fs-9"></ion-icon>
+        <span class="text-black">100 k Share</span>
+      </button>
+                </ion-col>
+                <ion-col col-2>
+                </ion-col>
+            </ion-row>
+
+        </div>
+
+        <div *ngSwitchCase="'myfeeds'" style="background: #f1f1f1 !important;">
+            <div class="box-checkbox" *ngIf="!buttonClicked">
+                <div class="header-set flex-center">
+
+                    <ion-title text-center class="text-white"><b class="text-white">Report Post</b></ion-title>
+
+                    <ion-buttons end>
+                        <button ion-button icon-only class="bg-none box-shd-none">
+                    <ion-icon name="ios-close-circle-outline" class="text-white"></ion-icon>
+                  </button>
+                    </ion-buttons>
+                </div>
+
+                <div class="box-padbox">
+                    <ion-item class="check-box-border">
+                        <ion-label>Spam</ion-label>
+                        <ion-checkbox color="dark" checked="false" class="mar-chk"></ion-checkbox>
+                    </ion-item>
+                    <ion-item class="check-box-border">
+                        <ion-label>Block this user</ion-label>
+                        <ion-checkbox color="dark" checked="false" class="mar-chk"></ion-checkbox>
+                    </ion-item>
+                    <ion-item class="check-box-border">
+                        <ion-label>Sexual content</ion-label>
+                        <ion-checkbox color="dark" checked="false" class="mar-chk"></ion-checkbox>
+                    </ion-item>
+                    <ion-item class="check-box-border">
+                        <ion-label>Harassment</ion-label>
+                        <ion-checkbox color="dark" checked="false" class="mar-chk"></ion-checkbox>
+                    </ion-item>
+                    <ion-item class="check-box-border">
+                        <ion-label>Personal or confidential information </ion-label>
+                        <ion-checkbox color="dark" checked="false" class="mar-chk"></ion-checkbox>
+                    </ion-item>
+                    <ion-item class="check-box-border">
+                        <ion-label>Copyright issue </ion-label>
+                        <ion-checkbox color="dark" checked="false" class="mar-chk"></ion-checkbox>
+                    </ion-item>
+                    <ion-item class="check-box-border">
+                        <ion-label>Involving pornography </ion-label>
+                        <ion-checkbox color="dark" checked="false" class="mar-chk"></ion-checkbox>
+                    </ion-item>
+                    <ion-item class="check-box-border">
+                        <ion-label>Threatening, self harm or suicidal </ion-label>
+                        <ion-checkbox color="dark" checked="false" class="mar-chk"></ion-checkbox>
+                    </ion-item>
+                    <ion-item class="check-box-border">
+                        <ion-label>sexual or suggestive involving minor </ion-label>
+                        <ion-checkbox color="dark" checked="false" class="mar-chk"></ion-checkbox>
+                    </ion-item>
+                    <ion-item class="check-box-border">
+                        <ion-label>Used my personal information </ion-label>
+                        <ion-checkbox color="dark" checked="false" class="mar-chk"></ion-checkbox>
+                    </ion-item>
+                    <ion-item class="check-box-border">
+                        <ion-label>Fake account </ion-label>
+                        <ion-checkbox color="dark" checked="false" class="mar-chk"></ion-checkbox>
+                    </ion-item>
+                    <p class="fs-11 mar-auto" padding>More Information</p>
+
+                    <ion-textarea rows="1" class="textArea">
+
+                    </ion-textarea>
+
+                    <br>
+                    <div text-center>
+                        <button ion-button class="submitBtn" (click)="SubmitReport()">Submit</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white" *ngIf="buttonClicked">
+                <ion-row>
+                    <ion-col col-7>
+                        <ion-item style="padding-left: 6px;">
+                            <ion-avatar item-start style="    margin-right: 8px;">
+                                <img src="./assets/imgs/girls.png">
+                            </ion-avatar>
+                            <div>
+                                <h6 class="mar-auto fs-11">Jasmin Wigan Androson</h6>
+                                <p class="fs-9 mar-auto">Registered Nurse at Brookdale</p>
+                                <p class="fs-9 mar-auto">2hrs ago</p>
+                            </div>
+                        </ion-item>
+                    </ion-col>
+                    <ion-col col-3 class="text-align no-padding">
+                        <ion-icon name="pin" class="fs-10"></ion-icon>&nbsp;
+                        <span class="fs-10">Chicago,IL</span>
+                    </ion-col>
+                    <ion-col col-2 text-center>
+                        <ion-icon name="ios-more" class="font-icon text-grey"></ion-icon>
+                    </ion-col>
+                </ion-row>
+
+                <p class="pro-desc">Hello William, I have checked your resume and I believe you have checked your resume and I believe you</p>
+
+                <img src="./assets/imgs/laptop.png">
+
+                <ion-row>
+                    <ion-col col-2>
+                        <button ion-button icon-start clear small class="fs-10">
+                      <ion-icon name="ios-heart" class="heart"></ion-icon>
+                      <span class="text-black">2.6 k</span>
+                    </button>
+                    </ion-col>
+                    <ion-col col-4>
+                        <button ion-button icon-start clear small class="fs-10">
+                      <ion-icon name="ios-more" class="more"></ion-icon>
+                      <span class="text-black">2.6 k Comment </span>
+                    </button>
+                    </ion-col>
+                    <ion-col col-4>
+                        <button ion-button icon-start clear small class="fs-10">
+                      <ion-icon name="md-share" class="text-grey more fs-9"></ion-icon>
+                      <span class="text-black">Share</span>
+                    </button>
+                    </ion-col>
+                    <ion-col col-2>
+                    </ion-col>
+                </ion-row>
+
+                <hr class="hr-divider">
+
+                <ion-row>
+                    <ion-col col-7>
+                        <ion-item style="padding-left: 6px;">
+                            <ion-avatar item-start style="    margin-right: 8px;">
+                                <img src="./assets/imgs/girl2.png">
+                            </ion-avatar>
+                            <div>
+                                <h6 class="mar-auto fs-11">Jasmin Wigan Androson</h6>
+                                <p class="fs-9 mar-auto">Registered Nurse at Brookdale</p>
+                                <p class="fs-9 mar-auto">2hrs ago</p>
+                            </div>
+                        </ion-item>
+                    </ion-col>
+                    <ion-col col-3 class="text-align no-padding">
+                        <ion-icon name="pin" class="fs-10"></ion-icon>&nbsp;
+                        <span class="fs-10">Chicago,IL</span>
+                    </ion-col>
+                    <ion-col col-2 text-center>
+                        <ion-icon name="ios-more" class="font-icon text-grey"></ion-icon>
+                    </ion-col>
+                </ion-row>
+
+                <p class="pro-desc">Hello William, I have checked your resume and I believe you have checked your resume and I believe you</p>
+
+                <ion-row>
+                    <ion-col col-2>
+                        <button ion-button icon-start clear small class="fs-10">
+                      <ion-icon name="ios-heart" class="heart"></ion-icon>
+                      <span class="text-black">2.6 k</span>
+                    </button>
+                    </ion-col>
+                    <ion-col col-4>
+                        <button ion-button icon-start clear small class="fs-10">
+                      <ion-icon name="ios-more" class="more"></ion-icon>
+                      <span class="text-black">2.6 k Comment </span>
+                    </button>
+                    </ion-col>
+                    <ion-col col-4>
+                        <button ion-button icon-start clear small class="fs-10">
+                      <ion-icon name="md-share" class="text-grey more fs-9"></ion-icon>
+                      <span class="text-black">100 k Share</span>
+                    </button>
+                    </ion-col>
+                    <ion-col col-2>
+                    </ion-col>
+                </ion-row>
+                <ion-row text-center class="bg-greylight" style="    padding: 8px 0px;
+">
+                    <ion-col col-2>
+                    </ion-col>
+                    <ion-col col-4 class="flex-center">
+                        <button ion-button icon-start class="btn-grey">
+                          <ion-icon name="ios-trash-outline"></ion-icon>
+                          Delete the post 
+                        </button>
+                    </ion-col>
+                    <ion-col col-4 class="flex-center">
+                        <button ion-button icon-start class="btn-grey">
+                          <ion-icon name="ios-checkmark-circle"></ion-icon>
+                          Edit your post 
+                        </button>
+                    </ion-col>
+                    <ion-col col-2 class="flex-center">
+                        <ion-icon name="ios-close-circle-outline" class="font-icon text-red"></ion-icon>
+                    </ion-col>
+                </ion-row>
+
+
+
+                <ion-row>
+                    <ion-col col-7>
+                        <ion-item style="padding-left: 6px;">
+                            <ion-avatar item-start style="    margin-right: 8px;">
+                                <img src="./assets/imgs/girl2.png">
+                            </ion-avatar>
+                            <div>
+                                <h6 class="mar-auto fs-11">Jasmin Wigan Androson</h6>
+                                <p class="fs-9 mar-auto">Registered Nurse at Brookdale</p>
+                                <p class="fs-9 mar-auto">2hrs ago</p>
+                            </div>
+                        </ion-item>
+                    </ion-col>
+                    <ion-col col-3 class="text-align no-padding">
+                        <ion-icon name="pin" class="fs-10"></ion-icon>&nbsp;
+                        <span class="fs-10">Chicago,IL</span>
+                    </ion-col>
+                    <ion-col col-2 text-center>
+                        <ion-icon name="ios-more" class="font-icon text-grey"></ion-icon>
+                    </ion-col>
+                </ion-row>
+
+                <p class="pro-desc">Hello William, I have checked your resume and I believe you have checked your resume and I believe you</p>
+
+                <ion-row>
+                    <ion-col col-2>
+                        <button ion-button icon-start clear small class="fs-10">
+                      <ion-icon name="ios-heart" class="heart"></ion-icon>
+                      <span class="text-black">2.6 k</span>
+                    </button>
+                    </ion-col>
+                    <ion-col col-4>
+                        <button ion-button icon-start clear small class="fs-10">
+                      <ion-icon name="ios-more" class="more"></ion-icon>
+                      <span class="text-black">2.6 k Comment </span>
+                    </button>
+                    </ion-col>
+                    <ion-col col-4>
+                        <button ion-button icon-start clear small class="fs-10">
+                      <ion-icon name="md-share" class="text-grey more fs-9"></ion-icon>
+                      <span class="text-black">100 k Share</span>
+                    </button>
+                    </ion-col>
+                    <ion-col col-2>
+                    </ion-col>
+                </ion-row>
+            </div>
+        </div>
     </div>
-       
-  </ion-col>
-</ion-row>
-</ion-scroll>
-
-  <ion-row (click)="goFeedDetails()" >
-  <ion-col col-7>
-      <ion-item style="padding-left: 6px;">
-      <ion-avatar item-start style="margin-right: 8px;">
-        <img src="./assets/imgs/logo.png" >
-      </ion-avatar>
-      <div>
-      <h6 class="mar-auto fs-11">Jasmin Wigan Androson</h6>
-      <p class="fs-9 mar-auto">Registered Nurse at Brookdale</p>
-      <p class="fs-9 mar-auto">2hrs ago</p>
-      </div>
-  </ion-item>
-    </ion-col>
-  <ion-col col-3 class="text-align no-padding">
-     <ion-icon name="pin" class="fs-10"></ion-icon>&nbsp;
-     <span class="fs-10">Chicago,IL</span>
-  </ion-col>
-  <ion-col col-2 text-center>
-      <ion-icon name="ios-more" class="font-icon text-grey"></ion-icon>
-  </ion-col>
-</ion-row>
-
-<p class="pro-desc">Hello William, I have checked your resume and I believe you 
-have checked your resume and I believe you</p>
-
-<img src="./assets/imgs/image1.png">
-
- <ion-row>
-    <ion-col col-2>
-      <button ion-button icon-start clear small class="fs-10">
-        <ion-icon name="ios-heart" class="heart"></ion-icon>
-        <span class="text-black">2.6 k</span>
-      </button>
-    </ion-col>
-    <ion-col col-4>
-      <button ion-button icon-start clear small class="fs-10">
-        <ion-icon name="ios-more" class="more"></ion-icon>
-        <span class="text-black">2.6 k Comment </span>
-      </button>
-    </ion-col>
-    <ion-col col-4>
-      <button ion-button icon-start clear small class="fs-10">
-        <ion-icon name="md-share" class="text-grey more fs-9"></ion-icon>
-        <span class="text-black">Share</span>
-      </button>
-    </ion-col>
-    <ion-col col-2>
-    </ion-col>
-  </ion-row>
-
-  <div>
-    <p class="p-text" text-center>VISIT SITE</p>
-  </div>
-
-   <hr class="hr-divider">
-
-  <ion-row >
-  <ion-col col-7>
-      <ion-item style="padding-left: 6px;">
-      <ion-avatar item-start style="    margin-right: 8px;">
-        <img src="./assets/imgs/girls.png" >
-      </ion-avatar>
-      <div>
-      <h6 class="mar-auto fs-11">Jasmin Wigan Androson</h6>
-      <p class="fs-9 mar-auto">Registered Nurse at Brookdale</p>
-      <p class="fs-9 mar-auto">2hrs ago</p>
-      </div>
-  </ion-item>
-    </ion-col>
-  <ion-col col-3 class="text-align no-padding">
-     <ion-icon name="pin" class="fs-10"></ion-icon>&nbsp;
-     <span class="fs-10">Chicago,IL</span>
-  </ion-col>
-  <ion-col col-2 text-center>
-      <ion-icon name="ios-more" class="font-icon text-grey"></ion-icon>
-  </ion-col>
-</ion-row>
-
-<p class="pro-desc">Hello William, I have checked your resume and I believe you 
-have checked your resume and I believe you</p>
-
-<ion-row>
-    <ion-col col-2>
-      <button ion-button icon-start clear small class="fs-10">
-        <ion-icon name="ios-heart" class="heart"></ion-icon>
-        <span class="text-black">2.6 k</span>
-      </button>
-    </ion-col>
-    <ion-col col-4>
-      <button ion-button icon-start clear small class="fs-10">
-        <ion-icon name="ios-more" class="more"></ion-icon>
-        <span class="text-black">2.6 k Comment </span>
-      </button>
-    </ion-col>
-    <ion-col col-4>
-      <button ion-button icon-start clear small class="fs-10">
-        <ion-icon name="md-share" class="text-grey more fs-9"></ion-icon>
-        <span class="text-black">100 k Share</span>
-      </button>
-    </ion-col>
-    <ion-col col-2>
-    </ion-col>
-  </ion-row>
-
-      </div>
-
-      <div *ngSwitchCase="'myfeeds'" style="background: #f1f1f1 !important;
-    padding: 12px;" >
-      <div class="box-checkbox">
-        <div class="header-set flex-center">
-
-        <ion-title text-center class="text-white"><b class="text-white">Report Post</b></ion-title>
-
-          <ion-buttons end>
-            <button ion-button icon-only class="bg-none box-shd-none">
-              <ion-icon name="ios-close-circle-outline" class="text-white"></ion-icon>
-            </button>
-          </ion-buttons>
-        </div >
-
-        <div class="box-padbox">
-        <ion-item class="check-box-border">
-          <ion-label>Spam</ion-label>
-          <ion-checkbox color="dark" checked="false" class="mar-chk"></ion-checkbox>
-        </ion-item>
-        <ion-item class="check-box-border">
-          <ion-label>Block this user</ion-label>
-          <ion-checkbox color="dark" checked="false" class="mar-chk"></ion-checkbox>
-        </ion-item>
-        <ion-item class="check-box-border">
-          <ion-label>Sexual content</ion-label>
-          <ion-checkbox color="dark" checked="false" class="mar-chk"></ion-checkbox>
-        </ion-item>
-        <ion-item class="check-box-border"> 
-          <ion-label>Harassment</ion-label>
-          <ion-checkbox color="dark" checked="false" class="mar-chk"></ion-checkbox>
-        </ion-item>
-        <ion-item class="check-box-border">
-          <ion-label>Personal or confidential information </ion-label>
-          <ion-checkbox color="dark" checked="false" class="mar-chk"></ion-checkbox>
-        </ion-item>
-        <ion-item class="check-box-border"> 
-          <ion-label>Copyright issue </ion-label>
-          <ion-checkbox color="dark" checked="false" class="mar-chk"></ion-checkbox>
-        </ion-item><ion-item class="check-box-border">
-          <ion-label>Involving pornography </ion-label>
-          <ion-checkbox color="dark" checked="false" class="mar-chk"></ion-checkbox>
-        </ion-item>
-        <ion-item class="check-box-border"> 
-          <ion-label>Threatening, self harm or suicidal </ion-label>
-          <ion-checkbox color="dark" checked="false" class="mar-chk"></ion-checkbox>
-        </ion-item><ion-item class="check-box-border">
-          <ion-label>sexual or suggestive involving minor </ion-label>
-          <ion-checkbox color="dark" checked="false" class="mar-chk"></ion-checkbox>
-        </ion-item>
-        <ion-item class="check-box-border"> 
-          <ion-label>Used my personal information </ion-label>
-          <ion-checkbox color="dark" checked="false" class="mar-chk"></ion-checkbox>
-        </ion-item><ion-item class="check-box-border">
-          <ion-label>Fake account </ion-label>
-          <ion-checkbox color="dark" checked="false" class="mar-chk"></ion-checkbox>
-        </ion-item>
-        <p class="fs-11 mar-auto" padding>More Information</p>
-
-         <ion-textarea rows="1" class="textArea" >
-           
-         </ion-textarea>
-
-         <br>
-         <div text-center>
-            <button ion-button class="submitBtn">Submit</button>
-         </div>
-         </div>
-         </div>
-     </div>
-</div>
-
-
-
 
 </ion-content>

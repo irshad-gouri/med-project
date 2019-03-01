@@ -7,7 +7,9 @@ import { FeedsDetailsPage } from '../feeds-details/feeds-details';
   templateUrl: 'home.html'
 })
 export class HomePage {
-  pet:string = 'trending';
+  public pet:string = 'trending';
+  public buttonClicked: boolean = false;
+  
   
   constructor(public navCtrl: NavController) {
 
@@ -16,5 +18,11 @@ export class HomePage {
   public goFeedDetails(){
   this.navCtrl.push(FeedsDetailsPage)
   }
+
+  public SubmitReport() {
+    this.buttonClicked = !this.buttonClicked;
+  }
+
+  
 
 }

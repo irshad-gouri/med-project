@@ -15,11 +15,18 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class FeedsDetailsPage {
 
+  public buttonShow: string = 'likes';
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad FeedsDetailsPage');
+  }
+
+  public ShowDiv(value) {
+    console.log(value)
+    this.buttonShow = value
   }
 
 }

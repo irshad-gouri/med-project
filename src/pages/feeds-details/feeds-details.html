@@ -5,82 +5,136 @@
   Ionic pages and navigation.
 -->
 <ion-header>
-  <ion-navbar>
-    <ion-title>Feeds</ion-title>
-  </ion-navbar>
+    <ion-navbar>
+        <ion-title>Feeds</ion-title>
+    </ion-navbar>
 </ion-header>
 
 <ion-content>
-	<ion-row >
-  <ion-col col-7>
-      <ion-item style="padding-left: 6px;">
-      <ion-avatar item-start style="margin-right: 8px;">
-        <img src="./assets/imgs/logo.png" >
-      </ion-avatar>
-      <div>
-      <h6 class="mar-auto fs-11">Jasmin Wigan Androson</h6>
-      <p class="fs-9 mar-auto">Registered Nurse at Brookdale</p>
-      <p class="fs-9 mar-auto">2hrs ago</p>
-      </div>
-  </ion-item>
-</ion-col>
-  <ion-col col-3 class="text-align no-padding">
-     <ion-icon name="pin" class="fs-10"></ion-icon>&nbsp;
-     <span class="fs-10">Chicago,IL</span>
-  </ion-col>
-  <ion-col col-2 text-center>
-      <ion-icon name="ios-more" class="font-icon text-grey"></ion-icon>
-  </ion-col>
-</ion-row>
+    <ion-row>
+        <ion-col col-7>
+            <ion-item style="padding-left: 6px;">
+                <ion-avatar item-start style="margin-right: 8px;">
+                    <img src="./assets/imgs/logo.png">
+                </ion-avatar>
+                <div>
+                    <h6 class="mar-auto fs-11">Jasmin Wigan Androson</h6>
+                    <p class="fs-9 mar-auto">Registered Nurse at Brookdale</p>
+                    <p class="fs-9 mar-auto">2hrs ago</p>
+                </div>
+            </ion-item>
+        </ion-col>
+        <ion-col col-3 class="text-align no-padding">
+            <ion-icon name="pin" class="fs-10"></ion-icon>&nbsp;
+            <span class="fs-10">Chicago,IL</span>
+        </ion-col>
+        <ion-col col-2 text-center>
+            <ion-icon name="ios-more" class="font-icon text-grey"></ion-icon>
+        </ion-col>
+    </ion-row>
 
-<p class="pro-desc">Hello William, I have checked your resume and I believe you 
-have checked your resume and I believe you</p>
-
+    <p class="pro-desc">Hello William, I have checked your resume and I believe you have checked your resume and I believe you</p>
 
 
-<ion-slides pager style="height: 180px;">
 
-  <ion-slide *ngFor="let story of [1,1,1,1]" style="height: 180px;">
-    <img src="./assets/imgs/image1.png" style="height: 180px;">
-  </ion-slide>
+    <ion-slides pager style="height: 180px;">
 
-</ion-slides>
+        <ion-slide *ngFor="let story of [1,1,1,1]" style="height: 180px;">
+            <img src="./assets/imgs/image1.png" style="height: 180px;">
+        </ion-slide>
 
- <ion-row>
-    <ion-col col-2>
-      <button ion-button icon-start clear small class="fs-10">
-        <ion-icon name="ios-heart" class="heart"></ion-icon>
-        <span class="text-black">2.6 k</span>
-      </button>
-    </ion-col>
-    <ion-col col-4>
-      <button ion-button icon-start clear small class="fs-10">
-        <ion-icon name="ios-more" class="more"></ion-icon>
-        <span class="text-black">2.6 k Comment </span>
-      </button>
-    </ion-col>
-    <ion-col col-4>
-      <button ion-button icon-start clear small class="fs-10">
-        <ion-icon name="md-share" class="text-grey more fs-9"></ion-icon>
-        <span class="text-black">100 k Share</span>
-      </button>
-    </ion-col>
-    <ion-col col-2>
-    </ion-col>
-  </ion-row>
+    </ion-slides>
 
-  <div padding> 
-    <p class="p-text text-grey">People like this post</p>
-    <ion-row *ngFor="let story of [1,1,1,1]" style="    border: 1px solid #e4e4e4;
+    <ion-row>
+        <ion-col col-2>
+            <button ion-button icon-start clear small class="fs-10" (click)="ShowDiv('likes')">
+      <ion-icon name="ios-heart" class="heart"></ion-icon>
+      <span class="text-black">2.6 k</span>
+    </button>
+        </ion-col>
+        <ion-col col-4>
+            <button ion-button icon-start clear small class="fs-10" (click)="ShowDiv('comment')">
+      <ion-icon name="ios-more" class="more"></ion-icon>
+      <span class="text-black">2.6 k Comment </span>
+    </button>
+        </ion-col>
+        <ion-col col-4>
+            <button ion-button icon-start clear small class="fs-10" (click)="ShowDiv('share')">
+      <ion-icon name="md-share" class="text-grey more fs-9"></ion-icon>
+      <span class="text-black">100 k Share</span>
+    </button>
+        </ion-col>
+        <ion-col col-2>
+        </ion-col>
+    </ion-row>
+
+    <div *ngIf="buttonShow == 'likes'">
+        <div padding>
+            <p class="p-text text-grey">People like this post</p>
+            <ion-row *ngFor="let story of [1,1,1,1]" style="    border: 1px solid #e4e4e4;
     border-radius: 40px;
     margin: 12px 0px;">
-    <ion-col col-3 class="text-align" >
-      <img src="./assets/imgs/girls.png" style="    width: 45px;
-    height: 45px;" >
-    </ion-col>
-    <ion-col col-9 class="text-align">
-      <span class="">Linda Millow </span> 
-    </ion-col>
+                <ion-col col-3 class="text-align">
+                    <img src="./assets/imgs/girls.png" style="    width: 45px;
+    height: 45px;">
+                </ion-col>
+                <ion-col col-9 class="text-align">
+                    <span class="">Linda Millow </span>
+                </ion-col>
+            </ion-row>
+        </div>
+    </div>
+
+    <div *ngIf="buttonShow == 'comment'">
+        <div padding>
+            <p class="p-text text-grey fs-8">COMMENTS</p>
+            <ion-row *ngFor="let story of [1,1,1,1]" style=" 
+    border-radius: 40px;">
+                <ion-col col-2 text-center>
+                    <img src="./assets/imgs/girls.png" style="    width: 45px;
+    height: 45px;">
+                </ion-col>
+                <ion-col col-10>
+                    <span class="fs-8 text-blue1">Jack wilson. </span><span class="text-black fs-8">Bangalore, India </span>
+                    <p class="comment-box mar-auto">Hello William, I have checked your resume and I believe you have checked your resume and I believe you</p>
+                    <p class="no-margin fs-8 time" text-right>2:00pm</p>
+                </ion-col>
+            </ion-row>
+        </div>
+    </div>
+
+    <div *ngIf="buttonShow == 'share'">
+        <div padding>
+            <p class="p-text text-grey">People shared this post</p>
+            <ion-row *ngFor="let story of [1,1,1,1]" style="    border: 1px solid #e4e4e4;
+    border-radius: 40px;
+    margin: 12px 0px;">
+                <ion-col col-3 class="text-align">
+                    <img src="./assets/imgs/girls.png" style="    width: 45px;
+    height: 45px;">
+                </ion-col>
+                <ion-col col-9 class="text-align">
+                    <span class="">Linda Millow </span>
+                </ion-col>
+            </ion-row>
+        </div>
+    </div>
+
+    <ion-row>
+        <ion-col col-2 class="flex-center">
+            <button ion-button icon-start clear small class="fs-20">
+              <ion-icon name="md-camera" class="text-black"></ion-icon>
+            </button>
+        </ion-col>
+        <ion-col col-7 class="text-align">
+            <ion-input type="text" value="" class="searchcomm"></ion-input>
+        </ion-col>
+        <ion-col col-3 class="flex-center">
+            <button ion-button icon-start clear small class="post-btn">
+                <span class="">Post</span>
+              </button>
+        </ion-col>
     </ion-row>
-  </div>
+
+
 </ion-content>

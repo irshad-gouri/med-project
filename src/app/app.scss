@@ -1,6 +1,4 @@
 // http://ionicframework.com/docs/theming/
-
-
 // App Global Sass
 // --------------------------------------------------
 // Put style rules here that you want to apply globally. These
@@ -14,16 +12,10 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
-
 @font-face {
     font-family: "Montserrat-Light";
     src: url("../assets/fonts/Montserrat-Light.eot");
-    src: url("../assets/fonts/Montserrat-Light.eot?#iefix") format("embedded-opentype"),
-      url("../assets/fonts/Montserrat-Light.otf") format("opentype"),
-      url("../assets/fonts/Montserrat-Light.svg") format("svg"), 
-      url("../assets/fonts/Montserrat-Light.ttf") format("truetype"),
-      url("../assets/fonts/Montserrat-Light.woff") format("woff"),
-      url("../assets/fonts/Montserrat-Light.woff2") format("woff2");
+    src: url("../assets/fonts/Montserrat-Light.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/Montserrat-Light.otf") format("opentype"), url("../assets/fonts/Montserrat-Light.svg") format("svg"), url("../assets/fonts/Montserrat-Light.ttf") format("truetype"), url("../assets/fonts/Montserrat-Light.woff") format("woff"), url("../assets/fonts/Montserrat-Light.woff2") format("woff2");
     font-weight: normal;
     font-style: normal;
 }
@@ -37,37 +29,38 @@ button,
 select,
 textarea,
 p,
-span, div{
+span,
+div {
     font-family: "Montserrat-Light" !important;
 }
 
 .btn_whiteBox {
-        border: 1px solid #3b3b3b;
-        padding: 20px;
-        border-radius: 5px;
-        text-align: center;
-        color: #000;
-        cursor: pointer;
-        font-size: 18px;
-        width: 54%;
-        background: #ffffff;
-        font-weight: 800;
-    }
+    border: 1px solid #3b3b3b;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    color: #000;
+    cursor: pointer;
+    font-size: 18px;
+    width: 54%;
+    background: #ffffff;
+    font-weight: 800;
+}
 
-    .btn_blackBox {
-        border: 1px solid #3b3b3b;
-        padding: 20px;
-        border-radius: 5px;
-        text-align: center;
-        color: white;
-        cursor: pointer;
-        font-size: 18px;
-        width: 54%;
-        background: black;
-        font-weight: 800;
-    }
-    
-.text-box{
+.btn_blackBox {
+    border: 1px solid #3b3b3b;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    width: 54%;
+    background: black;
+    font-weight: 800;
+}
+
+.text-box {
     color: white;
     text-align: center;
     border: 2px solid;
@@ -75,11 +68,11 @@ span, div{
     width: 75%;
     margin: auto;
     line-height: 32px;
-
 }
-.image-textBox{
-        width: 75%;
-    }
+
+.image-textBox {
+    width: 75%;
+}
 
 .scroll {
     height: 100%;
@@ -108,7 +101,6 @@ span, div{
 .fs-11 {
     font-size: 11px !important;
 }
-
 
 .fs-12 {
     font-size: 12px !important;
@@ -208,79 +200,100 @@ span, div{
 .no-padding {
     padding: 0px !important;
 }
+
 .bg-cover {
     background-image: url('../img/bg-cover.png');
     background-size: contain;
     height: 100%;
     width: 100%;
 }
+
 .bg-none {
     background: none !important;
 }
+
 .bg-black {
     background-color: black !important;
 }
+
 .bg-blue {
     background: #3b5998 !important;
 }
+
 .bg-red {
     background: #ed0707 !important;
 }
-.bg-white{
+
+.bg-white {
     background: white !important;
 }
+
 .text-white-lyt {
     color: #e9e7e6 !important;
 }
+
 .text-green {
     color: #1eff27 !important;
 }
+
 .text-grey {
     color: grey !important;
 }
-.text-purple{
+
+.text-purple {
     color: #7c58d0 !important;
 }
+
 .text-white {
     color: white !important;
 }
+
 .text-black {
     color: black !important;
 }
+
 .text-blue {
     color: #1023AD !important;
 }
+
 .text-blue1 {
     color: #502ED4 !important;
 }
-.text-blue2{
+
+.text-blue2 {
     color: #1023AD !important;
 }
+
 .text-yellow {
     color: #e8e840 !important;
 }
-.float-right{
+
+.float-right {
     float: right !important;
 }
-.float-left{
-		float: left !important;
+
+.float-left {
+    float: left !important;
 }
-.text-align{
+
+.text-align {
     display: flex !important;
     align-items: center !important;
 }
-.text-capitalize{
-        text-transform: capitalize !important;
+
+.text-capitalize {
+    text-transform: capitalize !important;
 }
-.bord-bot{
-        border-bottom: 1px solid #7c58d0 !important;
+
+.bord-bot {
+    border-bottom: 1px solid #7c58d0 !important;
 }
 
 .text-red {
     color: red;
 }
 
-.grad-button{
+.grad-button {
     background-image: linear-gradient(-90deg, #bc3b48, #b326e1);
 }
 
@@ -289,25 +302,36 @@ span, div{
     box-shadow: none !important;
 }
 
- .fs-w8{
-      font-weight: 800;
-    }
+.fs-w8 {
+    font-weight: 800;
+}
 
+.imageLogo {
+    width: 96% !important;
+}
 
-.imageLogo{
-        width: 96% !important;
-    }
+.contenthi {
+    padding-top: 36px !important;
+}
 
-    .contenthi{
-        padding-top: 36px !important;
-    }
+.cursive-font {
+    font-family: cursive !important;
+    font-size: 15px !important;
+    margin: 8px auto !important;
+}
 
-    .cursive-font{
-        font-family: cursive !important;
-            font-size: 15px !important;
-            margin: 8px auto !important;
-    }
-
-    .tab-button[aria-selected=true] .tab-button-icon {
+.tab-button[aria-selected=true] .tab-button-icon {
     color: #1023ad !important;
+}
+
+.bg-greylight {
+    background: #f3f3f3 !important;
+}
+
+ion-icon.tab-button-icon.icon.icon-md.ion-ios-add-circle-outline {
+    font-size: 46px !important;
+}
+
+.swiper-pagination-bullet-active {
+    background: #ffffff !important;
 }
